@@ -2,9 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
+from django.views.generic import ListView
 
 
 from .forms import UserCreationForm
+from .models import Company
 
 
 @login_required
@@ -25,5 +27,15 @@ def create_form(request):
 def logout_view(request):
     logout(request)
 
-def index(request):
-	return HttpResponse("Hello, world. You're at the polls index.")
+class index(ListView):
+    model = Company
+    template_name = "index.html"
+
+    def get_queryset(self, **kwargs):
+        user = self.request.user
+        return self.model.objects.filter(employee__email=user.email)
+
+
+
+
+

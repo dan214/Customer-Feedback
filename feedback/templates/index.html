@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h2>Companies</h2>
+<ul>
+    {% for company in object_list %}
+        <li>{{ company.name }}</li>
+        <p>{{ company.tag_line }}</p>
+        <p>{{ company.description }}</p>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
