@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 
 from .forms import UserCreationForm
