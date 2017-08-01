@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="Added styling for index page.">
+    <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" afterPath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/index.html" afterPath="$PROJECT_DIR$/feedback/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterviewTask/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            <state relative-caret-position="272">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -42,28 +34,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feedback/static/feedback/js/jquery.min.js">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterviewTask/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -75,12 +57,48 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedback/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#h2#0;n#head#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#head#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1501564653246" expanded="true" signature="2704:2720" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/static/feedback/images/logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,8 +106,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="174" column="13" lean-forward="false" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
+            <state relative-caret-position="442">
+              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4454">
+              <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -97,11 +125,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>script</find>
       <find>dapibus</find>
       <find>integer</find>
+      <find>animus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,8 +157,9 @@
         <option value="$PROJECT_DIR$/feedback/forms.py" />
         <option value="$PROJECT_DIR$/feedback/urls.py" />
         <option value="$PROJECT_DIR$/feedback/views.py" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/feedback/templates/base.html" />
         <option value="$PROJECT_DIR$/feedback/templates/index.html" />
       </list>
     </option>
@@ -136,8 +173,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,40 +192,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -198,11 +220,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -212,11 +234,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -230,11 +252,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -252,11 +274,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InterviewTask" />
+              <option name="myItemId" value="Customer-Feedback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -278,6 +300,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -287,6 +310,7 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters" />
     <property name="SearchEverywhereHistoryKey" value="create_user&#9;null&#9;null" />
     <property name="settings.editor.splitter.proportion" value="0.251714" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -501,30 +525,53 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16009104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20930232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09328969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2082019" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10468521" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -542,23 +589,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/feedback/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,9 +600,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,9 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,9 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,9 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -639,9 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,9 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,9 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,9 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,9 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,9 +741,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -749,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,9 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,9 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -804,9 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,9 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,9 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -861,9 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,17 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterviewTask/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,31 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,22 +895,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterviewTask/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="323">
           <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -967,36 +914,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InterviewTask/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/static/feedback/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="272">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/style.css">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="174" column="13" lean-forward="false" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
+        <state relative-caret-position="4454">
+          <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#h2#0;n#head#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#head#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1501564653246" expanded="true" signature="2704:2720" ph="..." />
           </folding>
         </state>
       </provider>

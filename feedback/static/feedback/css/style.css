@@ -23,11 +23,20 @@ body a{
 	border-bottom: 1px solid #6f879a;
 }
 .logo a{
+	color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0.8em;
 	display:block;
 }
 .logo {
 	float: left;
+
 }
+
 .head-nav ul li{
 	display: inline-block;
 }
