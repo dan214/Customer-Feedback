@@ -195,9 +195,8 @@ i.twt:hover {
 	font-weight: 600;
 	color: #556a7f;
 	text-transform: uppercase;
-	text-align: left;
 	line-height: 1.4em;
-	margin:0;
+	margin:10px;
 }
 p.adm {
 	color: #868f98;

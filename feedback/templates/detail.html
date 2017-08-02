@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %} {{ user.email }}{% endblock head_title %}
+{% block content %}
+<div class="content">
+	<div class="container">
+		 <div class="comments1">
+								<h4>Customer comments on {{ company }}</h4>
+             {% for feedback in company.feedback_set.all %}
+			  				<div class="comments-main">
+
+									<div class="col-md-10 cmts-main-right">
+										<h5>{{ feedback.first_name }} {{ feedback.last_name }}</h5>
+                                        <span>{{ feedback.comment }}</span>
+										<div class="cmts">
+											<div class="cmnts-left">
+												<p>On April 14, 2014, 18:01</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+             {% endfor %}
+			  				</div>
+    </div>
+</div>
+{% endblock content %}

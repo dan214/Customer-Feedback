@@ -30,9 +30,16 @@
 
 										<h2>{{ company.name }}</h2>
 										<a href="details.html"><img src="{% static 'feedback/images/img1.jpg' %}" class="img-responsive" alt=""></a>
-										<p>{{ company.description }}</p>
-										<a href="details.html" class="link">Read More</a>
-                                        {{ forloop.counter }}
+                                    <div class ="companyContent" style="padding: 10px 40px 0px 40px;">
+                                    <center>
+                                        <h4 style="text-align: center !important;">Review Highlights</h4>
+										<p style="text-align: center;">{% for review in company.feedback_set.all|slice:"3" %}
+                                            <b style="color: black">{{ review.first_name }}</b><br>
+                                            {{ review.comment }}..<br />
+                                        {% endfor %}</p>
+										<a href="/feedback/{{ company.id }}" class="link">See all reviews</a>
+                                    </center>
+                                    </div>
 									</div>
 								</div>
 							</div>

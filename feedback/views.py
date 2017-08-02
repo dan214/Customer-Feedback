@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import ListView, DetailView
@@ -22,7 +22,12 @@ def create_form(request):
 
     return render(request,'createemployee.html',{'form':form })
 
-
+def detail(request, company_id):
+    try:
+        company = Company.objects.get(pk=company_id)
+    except Company.DoesNotExist:
+        raise Http404("Company does not exist")
+    return render(request,'detail.html',{'company': company})
 
 def logout_view(request):
     logout(request)
