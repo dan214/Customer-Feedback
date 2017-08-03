@@ -22,14 +22,24 @@
 										<h2>{{ company.name }}</h2>
 										<a href="details.html"><img src="{% static 'feedback/images/img1.jpg' %}" class="img-responsive" alt=""></a>
                                     <div class ="companyContent" style="padding: 10px 40px 0px 40px;">
-                                    <center>
-                                        <h4 style="text-align: center !important;">Review Highlights</h4>
-										<p style="text-align: center;">{% for review in company.feedback_set.all|slice:"2" %}
+                                    <h4 style="text-align: center !important;">Review Highlights</h4>
+
+                                    <div class="company">
+
+                                    <div class="reviews">
+
+
+										<p style="text-align: center;">
+                                            {% for review in company.feedback_set.all %}
+                                                <div class="holder">
                                             <b style="color: black">{{ review.first_name }}</b><br>
-                                            {{ review.comment }}..<br />
-                                        {% endfor %}</p>
+                                                {{ review.comment }}..<br /></div>
+
+                                            {% endfor %}
+                                    </div>
+                                    </div>
 										<a href="/feedback/{{ company.id }}" class="link">See all reviews</a>
-                                    </center>
+
                                     </div>
 									</div>
 								</div>
@@ -46,6 +56,8 @@
 								<div class="l_g_r">
 									<div class="dapibus">
 										<h3>CURSUS FAUCIO</h3>
+
+
 										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
 										<a href="details.html"><img src="{% static 'feedback/images/img2.jpg' %}" class="img-responsive" alt=""></a>
 										<p>Phasellus ultrices nulla. </p>
@@ -217,7 +229,5 @@
 			    </div>
 	</div>
 </div>
-    <script>
 
-    </script>
 {% endblock content %}
