@@ -19,7 +19,7 @@ body a{
 	-ms-transition:0.5s all;
 }
 .header {
-	padding: 2em 0;
+	padding: 1em 3px 0px;
 	border-bottom: 1px solid #6f879a;
 }
 .logo a{
@@ -35,6 +35,17 @@ body a{
 .logo {
 	float: left;
 
+}
+
+.header-right a {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0.8em;
+    display: block;
 }
 
 .head-nav ul li{
@@ -103,9 +114,7 @@ ul a:focus {
 	transform: scale(0.9);
 	opacity: 0;
 }
-.head-nav {
-	padding: 1em 0;
-}
+
 .header-right ul li {
 	display: inline-block;
 	float: left;
@@ -181,7 +190,6 @@ i.twt:hover {
 }
 .content{
 	background:#f5f6f7;
-	padding:1em 0;
 }
 .dapibus {
 	background: #fff;
@@ -278,7 +286,7 @@ a.link:hover{
 }
 .lorem {
 	background: #fff;
-	padding: 2em 1.3em;
+	padding: 1em 1.3em;
 	margin: 2em 0 0;
 	box-shadow: 0px 1px 5px -1px rgba(104, 123, 144, 0.31);
 	border-radius: 0.3em;
@@ -855,7 +863,6 @@ strong {
 }
 .load_more{
 	text-align:center;
-	padding: 10px 0;
 }
 .l_g {
 	margin: 1em 0px;
