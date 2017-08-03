@@ -22,6 +22,11 @@ body a{
 	padding: 1em 3px 0px;
 	border-bottom: 1px solid #6f879a;
 }
+
+.holder{
+	width: auto !important;
+}
+
 .logo a{
 	color: #fff;
     position: relative;

@@ -29,9 +29,9 @@
                                     <div class="reviews">
 
 
-										<p style="text-align: center;">
+										<p style="text-align: center; width: 0px !important;">
                                             {% for review in company.feedback_set.all %}
-                                                <div class="holder">
+                                                <div class="holder" style="width: 0px !important;">
                                             <b style="color: black">{{ review.first_name }}</b><br>
                                                 {{ review.comment }}..<br /></div>
 

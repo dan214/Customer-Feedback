@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    $(".lorem").hide();
+    $(".lorem").fadeIn(6000);
+
      $('.reviews').bxSlider({
         speed: 500,
         auto: true,
@@ -28,6 +31,8 @@ $(document).ready(function() {
 
         }
     });
+
+
    
 
 });
