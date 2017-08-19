@@ -60,7 +60,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="menu"> </span>
 						<ul class="cl-effect-15">
 						<li class="active"><a href="index.html">My Companies</a></li>
+                                                      {% if user.is_authenticated %}
+     <li class="active"><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+   {% else %}
+     <li class="active"><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+   {% endif %}
 						</ul>
+
+
 				</div>
 
 						<!-- script-for-nav -->
