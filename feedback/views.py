@@ -2,13 +2,12 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
-from django.views.generic import ListView, DetailView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import CompanyForm
 
 
 from .models import Company
 
-
+@login_required(login_url='/accounts/login/')
 def detail(request, company_id):
     try:
         company = Company.objects.get(pk=company_id)
@@ -30,6 +29,23 @@ def index(request):
     }
 
     return render(request, 'index.html', context)
+
+def thanks(request):
+    return render(request,'thank-you.html')
+
+@login_required(login_url='/accounts/login/')
+def create_company(request):
+    if request.POST:
+        form = CompanyForm(request.POST)
+
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            return HttpResponseRedirect('/thanks')
+    else:
+        form = CompanyForm()
+    return render(request,'create_company.html',{'form':form })
+
 
 
 

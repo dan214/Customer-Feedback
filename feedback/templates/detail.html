@@ -6,6 +6,7 @@
 	<div class="container">
 		 <div class="comments1">
 								<h4>Customer comments on {{ company }}</h4>
+         {% if company.feedback_set.all %}
              {% for feedback in company.feedback_set.all %}
 			  				<div class="comments-main">
 
@@ -22,6 +23,10 @@
 									<div class="clearfix"></div>
 								</div>
              {% endfor %}
+         {% endif %}
+         {% if not company.feedback_set.all %}
+             <p>No comments for this company</p>
+         {% endif %}
 			  				</div>
     </div>
 </div>

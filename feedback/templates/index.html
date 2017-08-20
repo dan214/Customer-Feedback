@@ -14,7 +14,7 @@
                      {% with sum=0 %}
 
 						<div class="l_g">
-                             {% for company in object_list %}
+                             {% for company in objects %}
 							<div class="col-md-4 integ">
 								<div class="l_g_r">
 									<div class="lorem">
@@ -38,7 +38,7 @@
                                             {% endfor %}
                                     </div>
                                     </div>
-										<a href="/feedback/{{ company.id }}" class="link">See all reviews</a>
+										<a href="/{{ company.id }}" class="link">See all reviews</a>
 
                                     </div>
 									</div>
