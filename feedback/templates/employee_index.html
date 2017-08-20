@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %} {{ user.email }}{% endblock head_title %}
+{% block content %}
+
+<!-- content -->
+<div class="content">
+	<div class="container">
+	 <div class="load_more">
+			     <ul id="myList">
+
+			        <!-- These are our grid blocks -->
+			        <li>
+                     {% with sum=0 %}
+
+						<div class="l_g">
+
+                             {% for company in objects %}
+							<div class="col-md-4 integ">
+								<div class="l_g_r">
+									<div class="lorem">
+
+										<h2>{{ company.name }}</h2>
+										<a href="details.html"><img src="{% static 'feedback/images/img1.jpg' %}" class="img-responsive" alt=""></a>
+                                    <div class ="companyContent" style="padding: 10px 40px 0px 40px;">
+                                    <h4 style="text-align: center !important;">Review Highlights</h4>
+
+                                    <div class="company">
+
+                                    <div class="reviews">
+
+
+										<p style="text-align: center; width: 0px !important;">
+                                            {% for review in company.feedback_set.all %}
+                                                <div class="holder" style="width: 0px !important;">
+                                            <b style="color: black">{{ review.first_name }}</b><br>
+                                                {{ review.comment }}..<br /></div>
+
+                                            {% endfor %}
+                                    </div>
+                                    </div>
+										<a href="/{{ company.id }}" class="link">See all reviews</a>
+
+                                    </div>
+									</div>
+								</div>
+							</div>
+                            {% endfor %}
+							<div class="clearfix"></div>
+						</div>
+                      {% endwith %}
+					</li>
+                 </ul>
+     </div>
+	</div>
+</div>
+
+
+{% endblock content %}

@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a href="index.html">Welcome {{ user.email }}</a>
+				<a href="employee_index.html">Welcome {{ user.email }}</a>
 			</div>
 			<div class="header-right">
 				<ul>
@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="head-nav">
 					<span class="menu"> </span>
 						<ul class="cl-effect-15">
-						<li class="active"><a href="index.html">My Companies</a></li>
+						<li class="active"><a href="employee_index.html">My Companies</a></li>
                                                       {% if user.is_authenticated %}
      <li class="active"><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
    {% else %}
