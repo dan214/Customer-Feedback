@@ -2,136 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+
     <title>{% block head_title %}Customer Feedback{% endblock head_title %}</title>
 
-  <link rel="stylesheet" type="text/css" href="{% static 'feedback/css/bootstrap.css' %}">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'feedback/css/bootstrap.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'feedback/css/font-awesome.css' %}">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Graphic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script src="{% static 'feedback/js/jquery.min.js' %}"></script>
-<script src="{% static 'feedback/js/app.js' %}" type="text/javascript"></script>
-<!-- jQuery library (served from Google) -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!-- bxSlider Javascript file -->
-<script src="{% static 'feedback/js/jquery.bxslider/jquery.bxslider.js' %}"></script>
-<!-- bxSlider CSS file -->
-<link href="{% static 'feedback/js/jquery.bxslider/jquery.bxslider.css' %}" type="text/css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="{% static 'feedback/css/style.css' %}">
-    <script>
-		$(document).ready(function () {
-		    size_li = $("#myList li").size();
-		    x=3;
-		    $('#myList li:lt('+x+')').show();
-		    $('#loadMore').click(function () {
-		        x= (x+1 <= size_li) ? x+1 : size_li;
-		        $('#myList li:lt('+x+')').show();
-		    });
-		    $('#showLess').click(function () {
-		        x=(x-1<0) ? 1 : x-1;
-		        $('#myList li').not(':lt('+x+')').hide();
-		    });
-		});
-	</script>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'feedback/css/shop-homepage.css' %}" rel="stylesheet">
+
+    <link href="{% static 'feedback/css/style.css' %}" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'feedback/css/bootstrap.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+
 </head>
 <body>
-<!-- header -->
-<div class="banner">
-	<div class="container">
-		<div class="header">
-			<div class="logo">
-				<a href="employee_index.html">Welcome {{ user.email }}</a>
-			</div>
-			<div class="header-right">
-				<ul>
-					<li><a href="#"><i class="fb"> </i></a></li>
-					<li><a href="#"><i class="twt"> </i></a></li>
-				<li></li>
-					<div class="clearfix"></div>
-				</ul>
 
-			</div>
-				<div class="clearfix"> </div>
-			</div>
-				<div class="head-nav">
-					<span class="menu"> </span>
-						<ul class="cl-effect-15">
-						<li class="active"><a href="employee_index.html">My Companies</a></li>
-                                                      {% if user.is_authenticated %}
-     <li class="active"><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+                                                               {% if user.is_authenticated %}
+     <li class="nav-item"><a class="nav-link" href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
    {% else %}
-     <li class="active"><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+     <li class="nav-item"><a class="nav-link" href="{% url 'login'%}?next={{request.path}}">Login</a></li>
    {% endif %}
-						</ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-
-				</div>
-
-						<!-- script-for-nav -->
-					<script>
-						$( "span.menu" ).click(function() {
-						  $( ".head-nav ul" ).slideToggle(300, function() {
-							// Animation complete.
-						  });
-						});
-					</script>
-				<!-- script-for-nav -->
-	</div>
-</div>
-</body>
 {% block content %}
 {% endblock content %}
 
-<div class="footer">
-		<div class="container">
-			<div class="col-md-3 copy">
-				<div class="top1">
-					<i class="ham"></i>
-				</div>
-				<div class="top2">
-					<h6>Copyrights © 2015 Graphic</h6>
-					<p>All rights reserved</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-3 copy">
-				<div class="top1">
-					<i class="men"></i>
-				</div>
-				<div class="top2">
-					<h6>Template by: </h6>
-					<p><a href="http://w3layouts.com/">W3layouts</a></p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-3 copy">
-				<div class="top1">
-					<i class="app"></i>
-				</div>
-				<div class="top2">
-					<h6>Images From: </h6>
-					<p><a href="#"> www.wallcoo.net</a></p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-3 copy">
-				<div class="top1">
-					<i class="lik"></i>
-				</div>
-				<div class="top2">
-					<h6>Website </h6>
-					<p><a href="#"> www.yourblog.com</a></p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- footer -->
+{% block footer %}
 
+ <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Customer Feedback 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'feedback/js/jquery.min.js' %}"></script>
+    <script src="{% static 'feedback/js/popper.min.js' %}"></script>
+    <script src="{% static 'feedback/js/bootstrap.min.js' %}"></script>
+{% endblock %}
 
 </body>
 </html>

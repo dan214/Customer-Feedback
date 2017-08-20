@@ -2,33 +2,57 @@
 
 {%  block content %}
 
+    div class="center-container">
+	<!--header-->
+	<div class="header-w3l">
+		<h1>Login Form</h1>
+	</div>
+	<!--//header-->
+	<div class="main-content-agile">
+		<div class="sub-main-w3">
+			<div class="wthree-pro">
+                {% if form.errors %}
+                <p>Your username and password didn't match. Please try again.</p>
+                {% endif %}
+            {% if next %}
+            {% if user.is_authenticated %}
+                <p>Your account doesn't have access to this page. To proceed,
+            please login with an account that has access.</p>
+            {% else %}
+            <p>Please login to see this page.</p>
+                {% endif %}
+            {% endif %}
+				<h2>Login Quick</h2>
+			</div>
+			<form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+				<div class="pom-agile">
+					<input placeholder="E-mail" name="username" required id="id_username" class="user" type="text">
+					<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+				</div>
+				<div class="pom-agile">
+					<input  placeholder="Password" name="password" class="pass" type="password" required="">
+					<span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+				</div>
+				<div class="sub-w3l">
+					<h6><a href="{% url 'password_reset' %}">Forgot Password?</a></h6>
+					<div class="right-w3l">
+						<input type="submit" value="login">
+                        <input type="hidden" name="next" value="{{ next }}" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--//main-->
+	<!--footer-->
+	<div class="footer">
+		<p>&copy; 2017 Online Login Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+	</div>
+	<!--//footer-->
+</div>
 
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-{% if next %}
-{% if user.is_authenticated %}
-<p>Your account doesn't have access to this page. To proceed,
-please login with an account that has access.</p>
-{% else %}
-<p>Please login to see this page.</p>
-{% endif %}
-{% endif %}
-<form method="post" action="{% url 'login' %}">
-{% csrf_token %}
-<table>
-<tr>
-<td>{{ form.username.label_tag }}</td>
-<td>{{ form.username }}</td>
-</tr>
-<tr>
-<td>{{ form.password.label_tag }}</td>
-<td>{{ form.password }}</td>
-</tr>
-</table>
-<input type="submit" value="login" />
-<input type="hidden" name="next" value="{{ next }}" />
-</form>
-{# Assumes you setup the password_reset view in your URLconf #}
+{% endblock %}
 
+{% block footer %}
 {% endblock %}
