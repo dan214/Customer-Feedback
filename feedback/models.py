@@ -7,6 +7,7 @@ class Company(models.Model):
     tag_line = models.TextField()
     description = models.TextField()
     employee = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    company_pic = models.ImageField(upload_to='pic_folder/', default='/pic_folder/nologo.jpg')
 
     def __str__(self):
         return self.name

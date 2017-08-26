@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/None/nologo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/andela.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/coca_cola.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/coca_cola_2djQtzz.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/nologo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/unilever.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pic_folder/unilever_8yvOEiJ.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0013_company_company_pic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0014_auto_20170826_1419.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0015_auto_20170826_1451.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0016_auto_20170826_1455.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0017_auto_20170826_1457.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterviewTask/settings.py" afterPath="$PROJECT_DIR$/InterviewTask/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterviewTask/urls.py" afterPath="$PROJECT_DIR$/InterviewTask/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/models.py" afterPath="$PROJECT_DIR$/feedback/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/customer_index.html" afterPath="$PROJECT_DIR$/feedback/templates/customer_index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +39,8 @@
       <file leaf-file-name="customer_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            <state relative-caret-position="432">
+              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
               <folding>
                 <element signature="e#101#132#0#HTML" expanded="true" />
               </folding>
@@ -33,10 +48,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startbootstrap-shop-homepage-gh-pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="-792">
               <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="13" />
               <folding />
             </state>
@@ -63,16 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feedback/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="password_reset_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/templates/registration/password_reset_form.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,9 +101,11 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InterviewTask/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="450">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#647#688#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,8 +133,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InterviewTask/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="584">
+              <caret line="131" column="21" lean-forward="true" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -162,14 +179,11 @@
         <option value="$PROJECT_DIR$/web/details.html" />
         <option value="$PROJECT_DIR$/feedback/static/feedback/js/app.js" />
         <option value="$PROJECT_DIR$/feedback/admin.py" />
-        <option value="$PROJECT_DIR$/InterviewTask/urls.py" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/logged_out.html" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/password_reset_done.html" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/password_reset_email.html" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/password_reset_complete.html" />
-        <option value="$PROJECT_DIR$/InterviewTask/settings.py" />
-        <option value="$PROJECT_DIR$/feedback/models.py" />
         <option value="$PROJECT_DIR$/feedback/templates/detail.html" />
         <option value="$PROJECT_DIR$/feedback/forms.py" />
         <option value="$PROJECT_DIR$/feedback/templates/create_company.html" />
@@ -184,6 +198,9 @@
         <option value="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/feedback/templates/registration/password_reset_form.html" />
+        <option value="$PROJECT_DIR$/InterviewTask/urls.py" />
+        <option value="$PROJECT_DIR$/InterviewTask/settings.py" />
+        <option value="$PROJECT_DIR$/feedback/models.py" />
         <option value="$PROJECT_DIR$/feedback/templates/customer_index.html" />
       </list>
     </option>
@@ -239,30 +256,14 @@
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
               <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
               <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
+              <item name="None" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
@@ -273,85 +274,13 @@
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
+              <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="InterviewTask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="startbootstrap-shop-homepage-gh-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="popper" type="462c0819:PsiDirectoryNode" />
+              <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
+              <item name="None" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
@@ -381,19 +310,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\feedback\static\feedback" />
-      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\feedback\static\feedback\css" />
-      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\feedback\static\feedback\js" />
-      <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\feedback\static\feedback" />
-      <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\web" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\web" />
       <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\feedback\static\feedback\css" />
       <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\feedback\static" />
       <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\feedback\static\feedback" />
       <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\pic_folder" />
+      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\feedback\static\feedback" />
+      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\feedback\static\feedback\css" />
+      <recent name="C:\Users\Admin\PycharmProjects\Customer-Feedback\feedback\static\feedback\js" />
+      <recent name="C:\Users\Admin\Pictures\InterviewTask(1)\InterviewTask\feedback\static\feedback" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -665,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503239584148</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="populate the customer index with values">
+      <created>1503745196994</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1503745196994</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -689,6 +625,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -699,7 +636,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -718,7 +654,8 @@
     <MESSAGE value="Make width auto for the comments" />
     <MESSAGE value="Add user groups home pages and update index view" />
     <MESSAGE value="Add styling for login form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add styling for login form" />
+    <MESSAGE value="populate the customer index with values" />
+    <option name="LAST_COMMIT_MESSAGE" value="populate the customer index with values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -984,6 +914,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,14 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterviewTask/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/registration/password_reset_complete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1053,14 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterviewTask/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1083,16 +998,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/startbootstrap-shop-homepage-gh-pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="-792">
           <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterviewTask/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#647#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterviewTask/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="131" column="21" lean-forward="true" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="432">
+          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding>
             <element signature="e#101#132#0#HTML" expanded="true" />
           </folding>
