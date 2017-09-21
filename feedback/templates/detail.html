@@ -16,8 +16,8 @@
       <!-- Portfolio Item Row -->
       <div class="row">
 
-        <div class="col-md-8">
-          <img class="img-fluid" href="/{{ company.id }}" src="{{ company.company_pic.url }}" alt="{{ company.name }}" height="350" width="900">
+        <div class="col-md-8" height="350" width="900">
+          <img class="img-fluid" href="/{{ company.id }}" src="{{ company.company_pic.url }}" alt="{{ company.name }}" >
         </div>
 
         <div class="col-md-4">
@@ -34,29 +34,14 @@
 
       <div class="row">
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
+          {% for relatedCompany in company_list %}
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          <a href="/{{ relatedCompany.id }}">
+            <img class="img-fluid" src="{{ relatedCompany.company_pic.url }}" alt="" href="/{{ company.id }}">
           </a>
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
+          {% endfor %}
 
       </div>
       <!-- /.row -->
