@@ -7,7 +7,7 @@ from .forms import CompanyForm
 
 from .models import Company
 
-@login_required(login_url='/accounts/login/')
+
 def detail(request, company_id):
     try:
         company = Company.objects.get(pk=company_id)
