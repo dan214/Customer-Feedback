@@ -125,3 +125,8 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+MEDIA_ROOT = '/pic_folder'
+
+MEDIA_URL = '/media/'
