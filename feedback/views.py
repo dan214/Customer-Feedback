@@ -7,13 +7,20 @@ from .forms import CompanyForm
 
 from .models import Company
 
-@login_required(login_url='/accounts/login/')
+
 def detail(request, company_id):
+
     try:
         company = Company.objects.get(pk=company_id)
     except Company.DoesNotExist:
         raise Http404("Company does not exist")
-    return render(request,'detail.html',{'company': company})
+    company_list = Company.objects.all()
+    context = {
+        "company_list": company_list,
+        "company": company,
+
+    }
+    return render(request,'detail.html',context)
 
 
 def index(request):
