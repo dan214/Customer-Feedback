@@ -4,12 +4,7 @@
     <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" afterPath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/static/feedback/js/app.js" afterPath="$PROJECT_DIR$/feedback/static/feedback/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/base.html" afterPath="$PROJECT_DIR$/feedback/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/detail.html" afterPath="$PROJECT_DIR$/feedback/templates/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/employee_index.html" afterPath="$PROJECT_DIR$/feedback/templates/employee_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/views.py" afterPath="$PROJECT_DIR$/feedback/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,9 +116,11 @@
       <file leaf-file-name="employee_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedback/templates/employee_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="90" column="101" lean-forward="false" selection-start-line="90" selection-start-column="101" selection-end-line="90" selection-end-column="101" />
-              <folding />
+            <state relative-caret-position="576">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="e#3453#3486#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -688,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506075029833</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="bring back reviews on the home page for employees">
+      <created>1506087292061</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1506087292061</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -746,7 +750,8 @@
     <MESSAGE value="first check in some time" />
     <MESSAGE value="fix images and routes" />
     <MESSAGE value="add the reviews page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the reviews page" />
+    <MESSAGE value="bring back reviews on the home page for employees" />
+    <option name="LAST_COMMIT_MESSAGE" value="bring back reviews on the home page for employees" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1124,9 +1129,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/employee_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="90" column="101" lean-forward="false" selection-start-line="90" selection-start-column="101" selection-end-line="90" selection-end-column="101" />
-          <folding />
+        <state relative-caret-position="576">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#3453#3486#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
