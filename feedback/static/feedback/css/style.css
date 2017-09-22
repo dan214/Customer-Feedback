@@ -351,6 +351,10 @@ a.link:hover{
 	box-shadow: 0 0 0 !important;
 }
 
+.bx-viewport {
+    height: 120px!important;
+}
+
 .archievs h6 a:hover{
 	color: #dc8e7f;
 }

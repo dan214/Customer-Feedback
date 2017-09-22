@@ -4,7 +4,8 @@
     <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/employee_index.html" afterPath="$PROJECT_DIR$/feedback/templates/employee_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" afterPath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/customer_index.html" afterPath="$PROJECT_DIR$/feedback/templates/customer_index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,12 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customer_index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customer_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1062">
-              <caret line="100" column="0" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="100" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="440">
+              <caret line="103" column="43" lean-forward="true" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
+              <folding>
+                <element signature="e#4223#4265#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,18 +109,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="347" column="0" lean-forward="true" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="353" column="14" lean-forward="true" selection-start-line="353" selection-start-column="14" selection-end-line="353" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employee_index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="employee_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/templates/employee_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="108" selection-end-column="16" />
               <folding>
                 <element signature="e#3453#3486#0#HTML" expanded="true" />
               </folding>
@@ -184,15 +187,15 @@
         <option value="$PROJECT_DIR$/InterviewTask/urls.py" />
         <option value="$PROJECT_DIR$/InterviewTask/settings.py" />
         <option value="$PROJECT_DIR$/feedback/models.py" />
-        <option value="$PROJECT_DIR$/feedback/templates/customer_index.html" />
         <option value="$PROJECT_DIR$/feedback/urls.py" />
         <option value="$PROJECT_DIR$/feedback/templates/company_reviews.html" />
         <option value="$PROJECT_DIR$/feedback/views.py" />
         <option value="$PROJECT_DIR$/feedback/templates/base.html" />
-        <option value="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
         <option value="$PROJECT_DIR$/feedback/static/feedback/js/app.js" />
         <option value="$PROJECT_DIR$/feedback/templates/detail.html" />
         <option value="$PROJECT_DIR$/feedback/templates/employee_index.html" />
+        <option value="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
+        <option value="$PROJECT_DIR$/feedback/templates/customer_index.html" />
       </list>
     </option>
   </component>
@@ -692,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506087292061</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add check for companies with no reviews">
+      <created>1506087692772</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1506087692772</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -751,7 +761,8 @@
     <MESSAGE value="fix images and routes" />
     <MESSAGE value="add the reviews page" />
     <MESSAGE value="bring back reviews on the home page for employees" />
-    <option name="LAST_COMMIT_MESSAGE" value="bring back reviews on the home page for employees" />
+    <MESSAGE value="add check for companies with no reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="add check for companies with no reviews" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1061,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -1089,14 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-144">
           <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="347" column="0" lean-forward="true" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1129,10 +1124,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/employee_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="108" selection-end-column="16" />
           <folding>
             <element signature="e#3453#3486#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/static/feedback/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="353" column="14" lean-forward="true" selection-start-line="353" selection-start-column="14" selection-end-line="353" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="103" column="43" lean-forward="true" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
+          <folding>
+            <element signature="e#4223#4265#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
