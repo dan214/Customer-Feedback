@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^thanks/$',views.thanks),
     url(r'^create/$',views.create_company),
     url(r'^(?P<company_id>[0-9]+)/$', views.detail, name='detail'),
+    url(r'^reviews/(?P<company_id>[0-9]+)/$', views.review, name='review'),
 ]

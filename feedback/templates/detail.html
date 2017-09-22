@@ -24,6 +24,7 @@
           <h3 class="my-3">Company Description</h3>
           <p>{{ company.description }}</p>
           <h3 class="my-3">Employee : {{ company.employee.get_full_name }}</h3>
+            <a class="btn btn-primary" href="/reviews/{{ company.id }}" >View Company Reviews</a>
         </div>
 
       </div>
@@ -38,7 +39,7 @@
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="/{{ relatedCompany.id }}">
-            <img class="img-fluid" src="{{ relatedCompany.company_pic.url }}" alt="" href="/{{ company.id }}">
+            <img class="img-fluid" src="{{ relatedCompany.company_pic.url }}" alt="" href="/{{ relatedCompany.id }}">
           </a>
         </div>
           {% endfor %}

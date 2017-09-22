@@ -23,6 +23,19 @@ def detail(request, company_id):
     return render(request,'detail.html',context)
 
 
+def review(request, company_id):
+
+    try:
+        company = Company.objects.get(pk=company_id)
+    except Company.DoesNotExist:
+        raise Http404("Company does not exist")
+    context = {
+        "company": company,
+
+    }
+    return render(request, 'company_reviews.html', context)
+
+
 def index(request):
     is_employee = request.user.groups.filter(name='Employees').exists()
     is_manager = request.user.groups.filter(name='Managers').exists()
