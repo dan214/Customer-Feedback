@@ -43,7 +43,7 @@ def index(request):
     if is_employee:
         company_list = Company.objects.filter(employee=request.user)
         context = {
-            "objects": company_list,
+            "companies": company_list,
             "is_employee": is_employee,
             "is_manager": is_manager
         }
@@ -55,7 +55,7 @@ def index(request):
         managers = User.objects.filter(groups__name='Managers')
 
         context = {
-            "objects": company_list,
+            "companies": company_list,
             "employees": employees,
             "managers": managers
         }

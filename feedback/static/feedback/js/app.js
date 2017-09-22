@@ -3,37 +3,17 @@ $(document).ready(function() {
     $(".lorem").hide();
     $(".lorem").fadeIn(6000);
 
-     $('.reviews').bxSlider({
-        speed: 500,
-        auto: true,
-        controls: true,
-        captions: false,
-        pager: true,
-        nextText: '',
-        prevText: '',
-        mode: 'vertical'
-
-
-    });
-
     $('.reviews').bxSlider({
-        speed: 'fast',
-        auto: true,
+        speed: 10000,
         controls: true,
-        captions: false,
-        pager: true,
-        nextText: '',
-        prevText: '',
+        captions: true,
+        pager: false,
+        ticker:true,
         mode: 'vertical',
-        onSliderLoad: function () {
-
-            $(".holder").css({ display: "block" });
-
-        }
     });
 
 
-   
+
 
 });
 

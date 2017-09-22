@@ -345,6 +345,12 @@ a.link:hover{
 	border-bottom: 1px solid #868f98;
 	text-decoration:none;
 }
+
+.bx-wrapper {
+	margin-bottom: 0px !important;
+	box-shadow: 0 0 0 !important;
+}
+
 .archievs h6 a:hover{
 	color: #dc8e7f;
 }
