@@ -4,9 +4,7 @@
     <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/static/feedback/js/app.js" afterPath="$PROJECT_DIR$/feedback/static/feedback/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/create_review.html" afterPath="$PROJECT_DIR$/feedback/templates/create_review.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/views.py" afterPath="$PROJECT_DIR$/feedback/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/customer_index.html" afterPath="$PROJECT_DIR$/feedback/templates/customer_index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,13 +21,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customer_index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customer_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="95" column="98" lean-forward="false" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="98" />
+            <state relative-caret-position="720">
+              <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
               <folding>
-                <element signature="e#4223#4265#0#HTML" expanded="true" />
+                <element signature="e#2239#2281#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1340">
-              <caret line="111" column="8" lean-forward="true" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+            <state relative-caret-position="-874">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -194,13 +192,13 @@
         <option value="$PROJECT_DIR$/feedback/forms.py" />
         <option value="$PROJECT_DIR$/feedback/templates/company_reviews.html" />
         <option value="$PROJECT_DIR$/feedback/urls.py" />
-        <option value="$PROJECT_DIR$/feedback/templates/customer_index.html" />
         <option value="$PROJECT_DIR$/feedback/static/feedback/js/jackmoore-colorbox-0662982/colorbox.css" />
         <option value="$PROJECT_DIR$/feedback/templates/base.html" />
         <option value="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
         <option value="$PROJECT_DIR$/feedback/views.py" />
         <option value="$PROJECT_DIR$/feedback/templates/create_review.html" />
         <option value="$PROJECT_DIR$/feedback/static/feedback/js/app.js" />
+        <option value="$PROJECT_DIR$/feedback/templates/customer_index.html" />
       </list>
     </option>
   </component>
@@ -715,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506154616591</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="save reviews from home page">
+      <created>1506168157978</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1506168157978</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -777,7 +782,8 @@
     <MESSAGE value="add check for companies with no reviews" />
     <MESSAGE value="more styling for reviews" />
     <MESSAGE value="add review pop up" />
-    <option name="LAST_COMMIT_MESSAGE" value="add review pop up" />
+    <MESSAGE value="save reviews from home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="save reviews from home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,16 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="95" column="98" lean-forward="false" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="98" />
-          <folding>
-            <element signature="e#4223#4265#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feedback/static/feedback/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -1170,10 +1166,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="111" column="8" lean-forward="true" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+        <state relative-caret-position="-874">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/templates/customer_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+          <folding>
+            <element signature="e#2239#2281#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
