@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect, Http404
+from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from .forms import CompanyForm
-
+from .forms import CompanyForm,FeedbackForm
+from django.core import serializers
+import json
 
 from .models import Company
 
@@ -23,6 +24,29 @@ def detail(request, company_id):
     return render(request,'detail.html',context)
 
 
+def review(request, company_id):
+    if request.POST:
+        form = FeedbackForm(request.POST)
+
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            return HttpResponseRedirect('/thanks')
+    else:
+        form = FeedbackForm()
+
+    try:
+        company = Company.objects.get(pk=company_id)
+    except Company.DoesNotExist:
+        raise Http404("Company does not exist")
+    context = {
+        "company": company,
+        "form": form,
+
+    }
+    return render(request, 'company_reviews.html', context)
+
+
 def index(request):
     is_employee = request.user.groups.filter(name='Employees').exists()
     is_manager = request.user.groups.filter(name='Managers').exists()
@@ -30,7 +54,7 @@ def index(request):
     if is_employee:
         company_list = Company.objects.filter(employee=request.user)
         context = {
-            "objects": company_list,
+            "companies": company_list,
             "is_employee": is_employee,
             "is_manager": is_manager
         }
@@ -42,7 +66,7 @@ def index(request):
         managers = User.objects.filter(groups__name='Managers')
 
         context = {
-            "objects": company_list,
+            "companies": company_list,
             "employees": employees,
             "managers": managers
         }
@@ -84,6 +108,31 @@ def create_company(request):
         form = CompanyForm()
     return render(request,'create_company.html',{'form':form })
 
+def create_review(request,company_id):
+    try:
+        company = Company.objects.get(pk=company_id)
+    except Company.DoesNotExist:
+        raise Http404("Company does not exist")
+    if request.POST:
+        form = FeedbackForm(request.POST)
+        url = '/'
+        data = json.dumps(url)
+
+        if form.is_valid():
+
+            instance = form.save(commit=False)
+            instance.company = company
+            instance.save()
+            return HttpResponse(data, content_type='application/json')
+    else:
+        form = FeedbackForm()
+    context = {
+        "company": company,
+        "form": form,
+
+    }
+
+    return render(request,'create_review.html',context)
 
 
 

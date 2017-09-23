@@ -1,0 +1,58 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Page Content -->
+    <div class="container" style="
+    padding-top: 50px;
+">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Shop Name</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="{{ company.company_pic.url }}" alt="" max-height="400" max-width="900">
+            <div class="card-body">
+              <h3 class="card-title">{{ company.name }}</h3>
+              <h4>$24.99</h4>
+              <p class="card-text">{{ company.description }}</p>
+              <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+              4.0 stars
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              Company Reviews
+            </div>
+            <div class="card-body">
+                {% for review in company.feedback_set.all %}
+              <p>{{ review.comment }}</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+                {% endfor %}
+              <a id="CustomerReviewButton" href="#" class="btn btn-primary">Leave a Review</a>
+            </div>
+          </div>
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+
+{% endblock content %}
