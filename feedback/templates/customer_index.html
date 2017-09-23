@@ -40,17 +40,17 @@
             <div class="carousel-inner" role="listbox">
 
               <div class="carousel-item active" style="
-    width: 900px;
-    height: 350px;
+    max-width: 900px;
+    max-height: 350px;
 ">
                 <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
               </div>
                 {% for company in companies %}
                     <div class="carousel-item" style="
-    width: 900px;
-    height: 350px;
+    max-width: 900px;
+    max-height: 350px;
 ">
-                <img class="d-block img-fluid" style="height:100% !important; margin: 0 auto; background:#6FCDE3; -moz-border-radius: 100px; -webkit-border-radius:100px;" href="/{{ company.id }}" src="{{ company.company_pic.url }}" alt="{{ company.name }}" height="350" width="900">
+                <img class="d-block img-fluid" href="/{{ company.id }}" src="{{ company.company_pic.url }}" alt="{{ company.name }}" height="350" width="900">
               </div>
                 {% endfor %}
             </div>
