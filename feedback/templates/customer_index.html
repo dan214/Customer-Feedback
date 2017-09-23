@@ -96,7 +96,7 @@
                                         <a class="btn btn-primary" href="/reviews/{{ company.id }}">View All Reviews</a>
                                     {% else %}
                                         <p style="font-style: italic; padding: 32px;"><i>This company is yet to have any feedback</i></p>
-                                        <a class="btn btn-primary" href="/reviews/{{ company.id }}">Add A Review</a>
+                                        <a id="CustomerReviewButton" class="btn btn-primary" href="/reviews/create_review/{{ company.id }}">Add A Review</a>
                                     {% endif %}
 
                                 </div>

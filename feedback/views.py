@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from .forms import CompanyForm
+from .forms import CompanyForm,FeedbackForm
 
 
 from .models import Company
@@ -24,6 +24,15 @@ def detail(request, company_id):
 
 
 def review(request, company_id):
+    if request.POST:
+        form = FeedbackForm(request.POST)
+
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            return HttpResponseRedirect('/thanks')
+    else:
+        form = FeedbackForm()
 
     try:
         company = Company.objects.get(pk=company_id)
@@ -31,6 +40,7 @@ def review(request, company_id):
         raise Http404("Company does not exist")
     context = {
         "company": company,
+        "form": form,
 
     }
     return render(request, 'company_reviews.html', context)
@@ -97,6 +107,17 @@ def create_company(request):
         form = CompanyForm()
     return render(request,'create_company.html',{'form':form })
 
+def create_review(request,company_id):
+    if request.POST:
+        form = FeedbackForm(request.POST)
+
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            return HttpResponseRedirect('/thanks')
+    else:
+        form = FeedbackForm()
+    return render(request,'create_review.html',{'form':form })
 
 
 

@@ -20,7 +20,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Custom styles for this template -->
     <link href="{% static 'feedback/css/shop-homepage.css' %}" rel="stylesheet">
     <link href="{% static 'feedback/js/jquery.bxslider/jquery.bxslider.css' %}" rel="stylesheet">
-<link href="{% static 'feedback/css/colorbox.css' %}" rel="stylesheet">
+    <link href="{% static 'feedback/css/colorbox.css' %}" rel="stylesheet">
 
     <link href="{% static 'feedback/css/style.css' %}" rel="stylesheet">
 
@@ -31,59 +31,30 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body>
 
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/">Customer Feedback</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-                                                               {% if user.is_authenticated %}
-     <li class="nav-item"><a class="nav-link" href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
-   {% else %}
-     <li class="nav-item"><a class="nav-link" href="{% url 'login'%}?next={{request.path}}">Login</a></li>
-   {% endif %}
-          </ul>
-        </div>
-      </div>
-    </nav>
+<div class="row">
+     <div class="padding-30 popup">
+<table class="popupTable" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" style="background: white">
+    <tr>
+        <td>
 
-{% block content %}
-{% endblock content %}
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            {{ form }}
+                            <input type="submit" value="Submit"/>
+                        </form>
 
-{% block footer %}
 
- <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Customer Feedback 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
+        </td>
+    </tr>
+</table>
+            </div>
+     </div>
+ <!-- Bootstrap core JavaScript -->
     <script src="{% static 'feedback/js/jquery.min.js' %}"></script>
     <script src="{% static 'feedback/js/popper.min.js' %}"></script>
     <script src="{% static 'feedback/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'feedback/js/jquery.bxslider/jquery.bxslider.min.js' %}"></script>
     <script src="{% static 'feedback/js/jackmoore-colorbox-0662982/jquery.colorbox-min.js' %}"></script>
     <script src="{% static 'feedback/js/app.js' %}"></script>
-{% endblock %}
-
 </body>
 </html>

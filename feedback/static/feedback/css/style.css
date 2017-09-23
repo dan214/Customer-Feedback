@@ -354,6 +354,33 @@ a.link:hover{
 .bx-viewport {
     height: 120px!important;
 }
+.padding-30 {
+    padding: 30px;
+}
+
+.popup {
+    margin: 0;
+}
+
+div#colorbox {
+	top: 20%!important;
+	border:0;
+}
+
+
+iframe.cboxIframe {
+    width: 556px;
+    height: 536px;
+	border: 2px solid #49555d;
+}
+
+.popupTable {
+	margin: 0;
+    position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: white;
+}
 
 .archievs h6 a:hover{
 	color: #dc8e7f;
