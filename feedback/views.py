@@ -7,6 +7,7 @@ from django.core import serializers
 import json
 
 from .models import Company
+from django.core.mail import send_mail,EmailMultiAlternatives
 
 
 def detail(request, company_id):
@@ -123,6 +124,7 @@ def create_review(request,company_id):
             instance = form.save(commit=False)
             instance.company = company
             instance.save()
+            sendEmployeeEmailOnAddReview(company,form)
             return HttpResponse(data, content_type='application/json')
     else:
         form = FeedbackForm()
@@ -134,6 +136,25 @@ def create_review(request,company_id):
 
     return render(request,'create_review.html',context)
 
+from django.template.loader import render_to_string
+
+def sendEmployeeEmailOnAddReview(company,form):
+    subject, from_email, to = "Tech Greatness.com : A customer has added a review","irungu214@gmail.com", \
+                              company.employee.email
+
+    context = {
+        "employee": company.employee.get_full_name(),
+        "company": company,
+        "form": form,
+        "first_name": form.cleaned_data['first_name'],
+        "last_name": form.cleaned_data['last_name'],
+        "comment": form.cleaned_data['comment'],
+    }
+
+    msg_plain = render_to_string('add_review_email_template.txt', context)
+    msg_html = render_to_string('add_review_email_template.html', context)
+
+    send_mail(subject,msg_plain,from_email,[to],fail_silently=False,html_message=msg_html)
 
 
 
