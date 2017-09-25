@@ -154,7 +154,7 @@ def sendEmployeeEmailOnAddReview(company,form):
     msg_plain = render_to_string('add_review_email_template.txt', context)
     msg_html = render_to_string('add_review_email_template.html', context)
 
-    send_mail(subject,msg_plain,from_email,[to],fail_silently=False,html_message=msg_html)
+    send_mail(subject, msg_plain, from_email, [to], fail_silently=False, html_message=msg_html)
 
 
 
