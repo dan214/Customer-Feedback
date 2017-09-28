@@ -27,6 +27,10 @@ body a{
 	width: auto !important;
 }
 
+.card.mt-4 {
+	padding:20px 20px 0px 20px;
+}
+
 .logo a{
 	color: #fff;
     position: relative;
@@ -40,6 +44,14 @@ body a{
 .logo {
 	float: left;
 
+}
+a.nav-link {
+	font-size: 1.25rem;
+	color: #ccd8e4 !important;
+}
+
+nav#mainNav {
+	position: inherit;
 }
 
 .header-right a {
@@ -72,6 +84,10 @@ body a{
 .head-nav a:hover,
 .head-nav a:focus {
 	outline: none;
+
+}
+a.nav-link.active {
+	color: red !important;
 }
 .head-nav ul{
 	padding:0;
@@ -406,6 +422,13 @@ iframe.cboxIframe {
 	background: #e7eaec;
 	padding: 4em 0;
 	text-align: center;
+
+}
+footer.py-5.bg-dark {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	position: fixed;
 }
 .top1 {
 	float: left;

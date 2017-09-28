@@ -3,9 +3,7 @@
 
 {% block content %}
     <!-- Page Content -->
-    <div class="container" style="
-    padding-top: 50px;
-">
+    <div class="container">
 
       <div class="row">
 
@@ -22,13 +20,24 @@
         <div class="col-lg-9">
 
           <div class="card mt-4">
-            <img class="card-img-top img-fluid" src="{{ company.company_pic.url }}" alt="" max-height="400" max-width="900">
+              <table>
+                  <tr>
+                      <td style="width: 30%">
+                          <img class="card-img-top img-fluid" src="{{ company.company_pic.url }}" alt="" max-height="400" max-width="900">
+                      </td>
+                      <td style="width: 70%;padding: 0px 10px 0px 20px;vertical-align: top;">
+                          <h3 class="card-title">{{ company.name }}</h3>
+                          <p class="card-text">{{ company.description }}</p>
+                          <div style="    position: absolute;
+    bottom: 30px;
+    right: 215px;"><span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                              4.0 stars</div>
+                      </td>
+                  </tr>
+              </table>
+
             <div class="card-body">
-              <h3 class="card-title">{{ company.name }}</h3>
-              <h4>$24.99</h4>
-              <p class="card-text">{{ company.description }}</p>
-              <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-              4.0 stars
+
             </div>
           </div>
           <!-- /.card -->
