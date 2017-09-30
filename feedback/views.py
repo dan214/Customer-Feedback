@@ -1,14 +1,26 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from graphos.sources.simple import SimpleDataSource
+from graphos.renderers.gchart import LineChart
 from .forms import CompanyForm,FeedbackForm
 from django.core import serializers
+from graphos.renderers import flot
 import json
+
 
 from .models import Company
 from django.core.mail import send_mail,EmailMultiAlternatives
 
+
+data = [
+        ['Year', 'Sales', 'Expenses'],
+        [2004, 1000, 400],
+        [2005, 1170, 460],
+        [2006, 660, 1120],
+        [2007, 1030, 540]
+    ]
 
 def detail(request, company_id):
 
@@ -62,14 +74,29 @@ def index(request):
 
         return render(request, 'employee_index.html', context)
     elif request.user.is_staff:
+
         company_list = Company.objects.all()
+        secondary_data = [
+            ['year', 'revenue', 'sales'],
+            [2004, 100, 50000],
+            [2005, 240, 65000],
+            [2006, 300, 55000]
+        ]
+
+        data_source = SimpleDataSource(secondary_data)
+
+        chart = LineChart(data_source)
+
+
         employees = User.objects.filter(groups__name='Employees')
         managers = User.objects.filter(groups__name='Managers')
+
 
         context = {
             "companies": company_list,
             "employees": employees,
-            "managers": managers
+            "managers": managers,
+            "chart": chart
         }
 
         return render(request, 'admin_index.html', context)
@@ -155,6 +182,8 @@ def sendEmployeeEmailOnAddReview(company,form):
     msg_html = render_to_string('add_review_email_template.html', context)
 
     send_mail(subject, msg_plain, from_email, [to], fail_silently=False, html_message=msg_html)
+
+
 
 
 

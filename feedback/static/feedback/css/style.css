@@ -370,6 +370,15 @@ a.link:hover{
 .bx-viewport {
     height: 120px!important;
 }
+
+.companiesContainer .bx-viewport{
+	height: 250px!important;
+}
+
+.companies .card.mt-4 {
+    border: 0 !important;
+}
+
 .padding-30 {
     padding: 30px;
 }
