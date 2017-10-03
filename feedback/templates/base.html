@@ -10,9 +10,11 @@
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-    <title>{% block head_title %}Customer Feedback{% endblock head_title %}</title>
-
+     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback({{line_chart.as_html}});
+    </script>
     <!-- Bootstrap core CSS -->
     <link href="{% static 'feedback/css/bootstrap.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'feedback/css/font-awesome.css' %}">
@@ -30,41 +32,39 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </head>
 <body>
-
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="/">Customer Feedback</a>
+        <a class="navbar-brand " href="#page-top">Customer Feedback</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/">Companies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="/thanks">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
-                                                               {% if user.is_authenticated %}
+                                                                         {% if user.is_authenticated %}
      <li class="nav-item"><a class="nav-link" href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
    {% else %}
      <li class="nav-item"><a class="nav-link" href="{% url 'login'%}?next={{request.path}}">Login</a></li>
    {% endif %}
+
           </ul>
         </div>
       </div>
     </nav>
 
-{% block content %}
+<!-- Navigation -->
+   {% block content %}
 {% endblock content %}
 
 {% block footer %}
@@ -83,6 +83,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script src="{% static 'feedback/js/jquery.bxslider/jquery.bxslider.min.js' %}"></script>
     <script src="{% static 'feedback/js/jackmoore-colorbox-0662982/jquery.colorbox-min.js' %}"></script>
     <script src="{% static 'feedback/js/app.js' %}"></script>
+
 {% endblock %}
 
 </body>

@@ -1,13 +1,26 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from graphos.sources.simple import SimpleDataSource
+from graphos.renderers import gchart
 from .forms import CompanyForm,FeedbackForm
 from django.core import serializers
+from graphos.renderers import flot
 import json
 
-from .models import Company
 
+from .models import Company,Feedback
+from django.core.mail import send_mail,EmailMultiAlternatives
+
+
+data = [
+        ['Year', 'Sales', 'Expenses'],
+        [2004, 1000, 400],
+        [2005, 1170, 460],
+        [2006, 660, 1120],
+        [2007, 1030, 540]
+    ]
 
 def detail(request, company_id):
 
@@ -61,14 +74,32 @@ def index(request):
 
         return render(request, 'employee_index.html', context)
     elif request.user.is_staff:
+
         company_list = Company.objects.all()
+        reviews = []
+        companies = []
+        for company in company_list:
+            reviews.append(Feedback.objects.filter(company=company).count())
+            companies.append(company.name)
+
+        secondary_data = [
+         companies, reviews
+        ]
+
+        data_source = SimpleDataSource(secondary_data)
+
+        chart = gchart.BarChart(data_source,options={'title': "Companies versus their Reviews"})
+
+
         employees = User.objects.filter(groups__name='Employees')
         managers = User.objects.filter(groups__name='Managers')
+
 
         context = {
             "companies": company_list,
             "employees": employees,
-            "managers": managers
+            "managers": managers,
+            "chart": chart
         }
 
         return render(request, 'admin_index.html', context)
@@ -123,6 +154,7 @@ def create_review(request,company_id):
             instance = form.save(commit=False)
             instance.company = company
             instance.save()
+            sendEmployeeEmailOnAddReview(company,form)
             return HttpResponse(data, content_type='application/json')
     else:
         form = FeedbackForm()
@@ -133,6 +165,27 @@ def create_review(request,company_id):
     }
 
     return render(request,'create_review.html',context)
+
+from django.template.loader import render_to_string
+
+def sendEmployeeEmailOnAddReview(company,form):
+    subject, from_email, to = "Tech Greatness.com : A customer has added a review","irungu214@gmail.com", \
+                              company.employee.email
+
+    context = {
+        "employee": company.employee.get_full_name(),
+        "company": company,
+        "form": form,
+        "first_name": form.cleaned_data['first_name'],
+        "last_name": form.cleaned_data['last_name'],
+        "comment": form.cleaned_data['comment'],
+    }
+
+    msg_plain = render_to_string('add_review_email_template.txt', context)
+    msg_html = render_to_string('add_review_email_template.html', context)
+
+    send_mail(subject, msg_plain, from_email, [to], fail_silently=False, html_message=msg_html)
+
 
 
 

@@ -5,16 +5,129 @@ $(document).ready(function () {
 
     $('.reviews').bxSlider({
         speed: 10000,
+        auto: true,
         controls: true,
         captions: true,
         pager: false,
         ticker: true,
         mode: 'vertical',
     });
+    $('.companies').bxSlider({
+        speed: 2000,
+        auto: true,
+        pager:false,
+        controls: true,
+        pause:2000,
+        mode: 'horizontal',
+    });
 
 
 });
 
+// Get the CSV and create the chart
+$.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=analytics.csv&callback=?', function (csv) {
+
+    Highcharts.chart('graph', {
+
+        data: {
+            csv: csv
+        },
+
+        title: {
+            text: 'Daily visits at www.highcharts.com'
+        },
+
+        subtitle: {
+            text: 'Source: Google Analytics'
+        },
+
+        xAxis: {
+            tickInterval: 7 * 24 * 3600 * 1000, // one week
+            tickWidth: 0,
+            gridLineWidth: 1,
+            labels: {
+                align: 'left',
+                x: 3,
+                y: -3
+            }
+        },
+
+        yAxis: [{ // left y axis
+            title: {
+                text: null
+            },
+            labels: {
+                align: 'left',
+                x: 3,
+                y: 16,
+                format: '{value:.,0f}'
+            },
+            showFirstLabel: false
+        }, { // right y axis
+            linkedTo: 0,
+            gridLineWidth: 0,
+            opposite: true,
+            title: {
+                text: null
+            },
+            labels: {
+                align: 'right',
+                x: -3,
+                y: 16,
+                format: '{value:.,0f}'
+            },
+            showFirstLabel: false
+        }],
+
+        legend: {
+            align: 'left',
+            verticalAlign: 'top',
+            y: 20,
+            floating: true,
+            borderWidth: 0
+        },
+
+        tooltip: {
+            shared: true,
+            crosshairs: true
+        },
+
+        plotOptions: {
+            series: {
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: function (e) {
+                            hs.htmlExpand(null, {
+                                pageOrigin: {
+                                    x: e.pageX || e.clientX,
+                                    y: e.pageY || e.clientY
+                                },
+                                headingText: this.series.name,
+                                maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x) + ':<br/> ' +
+                                    this.y + ' visits',
+                                width: 200
+                            });
+                        }
+                    }
+                },
+                marker: {
+                    lineWidth: 1
+                }
+            }
+        },
+
+        series: [{
+            name: 'All visits',
+            lineWidth: 4,
+            marker: {
+                radius: 4
+            }
+        }, {
+            name: 'New visitors'
+        }]
+    });
+});
 $(document).delegate("#CustomerReviewButton", "click", function (event) {
     var url = $(this).attr('href');
     event.preventDefault();
@@ -50,15 +163,6 @@ $(document).delegate("#SubmitReviewButton",
 
     });
 
-function animateContent(direction) {
-    var animationOffset = $('.company').height() - $('.reviews').height() - 30;
-    if (direction == 'up') {
-        animationOffset = 0;
-    }
-
-    console.log("animationOffset:" + animationOffset);
-    $('.reviews').animate({"marginTop": (animationOffset) + "px"}, 5000);
-}
 
 function up() {
     animateContent("up")

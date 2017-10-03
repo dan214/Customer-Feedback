@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from PIL import Image
 
 
 class Company(models.Model):
@@ -11,6 +12,21 @@ class Company(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self):
+
+        if not self.id and not self.photo:
+            return
+
+        super(Company, self).save()
+
+        company_pic = Image.open(self.company_pic)
+        (width, height) = company_pic.size
+
+        size = (500,350)
+        size = (500,350)
+        company_pic = company_pic.resize(size, Image.ANTIALIAS)
+        company_pic.save(self.company_pic.path)
 
 
 class Feedback(models.Model):
