@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .forms import CompanyForm,FeedbackForm
 import json
+import calendar
+import datetime
 
 from .fusioncharts import FusionCharts
 from .models import Company,Feedback
@@ -75,8 +77,6 @@ def index(request):
         # setting chart cosmetics
         dataSource['chart'] = {
             "caption": "Graph for Companies versus their respective reviews",
-            "paletteColors": "#0075c2",
-            "bgColor": "#ffffff",
             "borderAlpha": "20",
             "canvasBorderAlpha": "0",
             "usePlotGradientColor": "0",
@@ -88,8 +88,42 @@ def index(request):
             "showValues": "0",
             "divlineColor": "#999999",
             "divLineIsDashed": "1",
-            "showAlternateHGridColor": "0"
+            "showAlternateHGridColor": "0",
+            "exportEnabled": "1"
         }
+
+        reviewsDataSource = {}
+        # setting chart cosmetics
+        reviewsDataSource['chart'] = {
+            "caption": "Number of reviews added",
+            "subcaption":"Last Year",
+            "borderAlpha": "20",
+            "canvasBorderAlpha": "0",
+            "usePlotGradientColor": "0",
+            "xaxisname": "Months",
+            "yaxisname": "Reviews",
+            "plotBorderAlpha": "10",
+            "showXAxisLine": "1",
+            "xAxisLineColor": "#999999",
+            "showValues": "0",
+            "divlineColor": "#999999",
+            "divLineIsDashed": "1",
+            "showAlternateHGridColor": "0",
+            "exportEnabled": "1"
+        }
+
+        reviewsDataSource['data'] = []
+
+        for i in range(1, 13):
+            data = {}
+            currentMonth = datetime.date(2008, i, 1).strftime('%B')
+            data['label'] = currentMonth
+            count = 0
+            for key in Feedback.objects.all():
+                if currentMonth == key.timestamp.strftime("%B"):
+                    count = count + 1
+            data['value'] = count
+            reviewsDataSource['data'].append(data)
 
         dataSource['data'] = []
         # The data for the chart should be in an array wherein each element of the array is a JSON object as
@@ -103,8 +137,10 @@ def index(request):
 
         column2D = FusionCharts("column2D", "ex1", "600", "400", "chart-1", "json", dataSource)
 
-        company_list = Company.objects.all()
+        column3D = FusionCharts("column2D", "ex2", "600", "400", "chart-2", "json", reviewsDataSource)
 
+        company_list = Company.objects.all()
+        review_list = Feedback.objects.all()
         employees = User.objects.filter(groups__name='Employees')
         managers = User.objects.filter(groups__name='Managers')
 
@@ -113,7 +149,10 @@ def index(request):
             "companies": company_list,
             "employees": employees,
             "managers": managers,
-            "chart": column2D.render()
+            "chart": column2D.render(),
+            "chart2": column3D.render(),
+            "reviews": review_list,
+            "latestReviews": Feedback.objects.order_by('-timestamp')[:5]
         }
 
         return render(request, 'admin_index.html', context)

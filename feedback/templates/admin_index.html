@@ -1,80 +1,102 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container" style="padding-top: 30px; padding-bottom: 10px">
+<div class="page-container" style="padding-top: 30px; padding-bottom: 10px">
 
-<div class="row">
-    <div class="col-lg-9 graph">
-         <div class="panel panel-default" style="border: 2px solid #49555d;height:100%">
+<div class="row" style="padding-bottom: 30px">
+        <div class="col-md-4">
+<div class="panel panel-default" style="height:100%; background: #ff4a43">
+      <div class="panel-body">
+    <h3>Managers</h3>
+          <h4>{{ managers.count }}</h4>
+      </div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+           <div class="panel panel-default" style="height:100%; background:#22beef">
+      <div class="panel-body">
+      <h4>Companies</h4>
+         <h4>{{ companies.count }}</h4>
+     </div>
+     </div>
+</div>
+
+<div class="col-md-4">
+
+           <div class="panel panel-default" style="height:100%; background:#a2d200">
+      <div class="panel-body">
+      <h3>Reviews</h3>
+         <h4>{{ reviews.count }}</h4>
+     </div>
+     </div>
+
+</div>
+</div>
+
+<div class="row" style="padding: 20px 20px 20px 1px; background: lightgrey;">
+    <div class="col-md-12">
+    <ol class="statistics">
+    <li>
+    <h3>Statistics</h3>
+    </li>
+    </ol>
+    </div>
+
+    <div class="col-md-6 graph">
+
+         <div class="panel panel-default" style="height:100%">
       <div class="panel-body">
           <div id="chart-1"></div>
         {{ chart | safe }}
       </div>
          </div>
     </div>
-    <div class="col-lg-3">
-<div class="panel panel-default" style="border: 2px solid #49555d;height:100%">
+     <div class="col-md-6 graph">
+         <div class="panel panel-default" style="height:100%">
       <div class="panel-body">
-    <h4>Managers</h4>
-    <ul>
-    {% for manager in managers %}
-        <li>{{ manager.get_full_name }}</li>
-    {% endfor %}
-    </ul>
+          <div id="chart-2"></div>
+        {{ chart2 | safe }}
       </div>
+         </div>
+    </div>
+
 </div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6">
-<div class="panel panel-default" style="border: 2px solid #49555d;height:95%">
-      <div class="panel-body">
-<h4>Employees</h4>
-    <ul>
-    {% for employee in employees %}
-        <li>{{ employee.get_full_name }}</li>
-    {% endfor %}
-    </ul>
-      </div>
-</div>
-</div>
-
-<div class="col-lg-6">
-
-
-     <ul>
-           <div class="panel panel-default" style="border: 2px solid #49555d;height:100%">
-      <div class="panel-body">
-     <div class="companiesContainer">
-      <h4>Companies</h4>
-     <div class="companies">
-
-
-    {% for company in companies %}
-        <div class="card mt-4">
-              <table>
-                  <tr>
-                      <td style="width: 30%">
-                          <img class="card-img-top img-fluid" src="{{ company.company_pic.url }}" alt="" max-height="400" max-width="900">
-                      </td>
-                      <td style="width: 70%;padding: 0px 10px 0px 20px;vertical-align: top;">
-                          <h3 class="card-title">{{ company.name }}</h3>
-                          <p class="card-text">Employee : {{ company.employee.get_full_name }}</p>
-                      </td>
-                  </tr>
-              </table>
-
-            <div class="card-body">
+<div class="row" style="background: lightgrey">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="row tabletop tableright">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h3>October 2017</h3>
+                    <p>REPORT</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 textright">
+                    <h2>{{ latestReviews.count }} reviews</h2>
+                </div>
 
             </div>
-          </div>
-    {% endfor %}
-      </div>
-      </div>
-     </div>
-     </div>
-    </ul>
-</div>
+            <div class="widget-body">
+                <table class="table">
+                    <tr>
+                        <th>REVIEW</th>
+                        <th>COMPANY</th>
+                        <th>DATE SUBMITTED</th>
+                    </tr>
+                    {% for review in latestReviews %}
+                    <tr>
+
+                            <td>{{ review.first_name }}</td>
+                            <td>{{ review.company.name }}</td>
+                            <td>{{ review.timestamp }}</td>
+
+                    </tr>
+                          {% endfor %}
+                </table>
+            </div>
+
+        </div>
+    </div>
 </div>
 </div>
 {% endblock %}

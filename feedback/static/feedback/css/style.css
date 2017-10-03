@@ -45,8 +45,56 @@ body a{
 	float: left;
 
 }
+
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#4c4c4c;
+    /* Type */
+    text-decoration:none;
+}
+
+a.accordion-section-title.btn.btn-primary.active {
+    width: 20% !important;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+	width: 20%;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
 a.nav-link {
-	font-size: 1.25rem;
+	font-size: 19px;
 	color: #ccd8e4 !important;
 }
 
@@ -427,17 +475,74 @@ iframe.cboxIframe {
 .categories h6 a:hover{
 	color: #dc8e7f;
 }
+.statistics {
+    text-align: left;
+    font-weight: 500 !important;
+	padding: 5px 15px !important;
+}
+
+.row.tabletop {
+    padding: 10px 10px 10px 10px;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+}
+
+.widget-body {
+    padding: 15px;
+}
+
+.widget-body td {
+    text-align: left;
+	color: #999;
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -o-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.statistics h3 {
+    font-size: 24px;
+    vertical-align: middle;
+    font-weight: 400 !important;
+}
+
+.page-container {
+    min-width: 1260px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 64%;
+    height: 100%;
+    margin: 0px auto;
+}
 .footer {
 	background: #e7eaec;
 	padding: 4em 0;
 	text-align: center;
 
 }
+
+.panel-body, h3, h4 {
+    font-weight: 100 !important;
+}
 footer.py-5.bg-dark {
     bottom: 0;
     left: 0;
     width: 100%;
-	position: fixed;
+}
+.panel-body {
+    color: white;
 }
 .top1 {
 	float: left;
