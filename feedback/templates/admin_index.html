@@ -1,9 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container" style="padding-top: 30px">
+<div class="container" style="padding-top: 30px; padding-bottom: 10px">
+
 <div class="row">
-<div class="col-lg-3">
+    <div class="col-lg-9 graph">
+         <div class="panel panel-default" style="border: 2px solid #49555d;height:100%">
+      <div class="panel-body">
+          <div id="chart-1"></div>
+        {{ chart | safe }}
+      </div>
+         </div>
+    </div>
+    <div class="col-lg-3">
+<div class="panel panel-default" style="border: 2px solid #49555d;height:100%">
+      <div class="panel-body">
+    <h4>Managers</h4>
+    <ul>
+    {% for manager in managers %}
+        <li>{{ manager.get_full_name }}</li>
+    {% endfor %}
+    </ul>
+      </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
 <div class="panel panel-default" style="border: 2px solid #49555d;height:95%">
       <div class="panel-body">
 <h4>Employees</h4>
@@ -15,18 +38,7 @@
       </div>
 </div>
 </div>
-<div class="col-lg-3">
-<div class="panel panel-default" style="border: 2px solid #49555d;height:95%">
-      <div class="panel-body">
-    <h4>Managers</h4>
-    <ul>
-    {% for manager in managers %}
-        <li>{{ manager.get_full_name }}</li>
-    {% endfor %}
-    </ul>
-      </div>
-</div>
-</div>
+
 <div class="col-lg-6">
 
 
@@ -63,12 +75,6 @@
      </div>
     </ul>
 </div>
-</div>
-<div class="row">
-    <div class="col-lg-3 graph">
-        <p>am here, arent I?</p>
-        {{ chart.as_html }}
-    </div>
 </div>
 </div>
 {% endblock %}

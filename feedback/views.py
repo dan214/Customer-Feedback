@@ -2,16 +2,12 @@ from django.shortcuts import render,render_to_response
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from graphos.sources.simple import SimpleDataSource
-from graphos.renderers.gchart import LineChart
 from .forms import CompanyForm,FeedbackForm
-from django.core import serializers
-from graphos.renderers import flot
 import json
 
-
-from .models import Company
-from django.core.mail import send_mail,EmailMultiAlternatives
+from .fusioncharts import FusionCharts
+from .models import Company,Feedback
+from django.core.mail import send_mail
 
 
 data = [
@@ -75,18 +71,39 @@ def index(request):
         return render(request, 'employee_index.html', context)
     elif request.user.is_staff:
 
+        dataSource = {}
+        # setting chart cosmetics
+        dataSource['chart'] = {
+            "caption": "Graph for Companies versus their respective reviews",
+            "paletteColors": "#0075c2",
+            "bgColor": "#ffffff",
+            "borderAlpha": "20",
+            "canvasBorderAlpha": "0",
+            "usePlotGradientColor": "0",
+            "xaxisname": "Companies",
+            "yaxisname": "Reviews",
+            "plotBorderAlpha": "10",
+            "showXAxisLine": "1",
+            "xAxisLineColor": "#999999",
+            "showValues": "0",
+            "divlineColor": "#999999",
+            "divLineIsDashed": "1",
+            "showAlternateHGridColor": "0"
+        }
+
+        dataSource['data'] = []
+        # The data for the chart should be in an array wherein each element of the array is a JSON object as
+        # `label` and `value` keys.
+        # Iterate through the data in `Country` model and insert in to the `dataSource['data']` list.
+        for key in Company.objects.all():
+            data = {}
+            data['label'] = key.name
+            data['value'] = Feedback.objects.filter(company=key).count()
+            dataSource['data'].append(data)
+
+        column2D = FusionCharts("column2D", "ex1", "600", "400", "chart-1", "json", dataSource)
+
         company_list = Company.objects.all()
-        secondary_data = [
-            ['year', 'revenue', 'sales'],
-            [2004, 100, 50000],
-            [2005, 240, 65000],
-            [2006, 300, 55000]
-        ]
-
-        data_source = SimpleDataSource(secondary_data)
-
-        chart = LineChart(data_source)
-
 
         employees = User.objects.filter(groups__name='Employees')
         managers = User.objects.filter(groups__name='Managers')
@@ -96,7 +113,7 @@ def index(request):
             "companies": company_list,
             "employees": employees,
             "managers": managers,
-            "chart": chart
+            "chart": column2D.render()
         }
 
         return render(request, 'admin_index.html', context)

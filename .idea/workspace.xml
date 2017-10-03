@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0018_feedback_timestamp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/admin_index.html" afterPath="$PROJECT_DIR$/feedback/templates/admin_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/views.py" afterPath="$PROJECT_DIR$/feedback/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +55,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedback/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+            <state relative-caret-position="1170">
+              <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -112,12 +114,10 @@
       <file leaf-file-name="admin_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/templates/admin_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <state relative-caret-position="749">
+              <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
               <folding>
-                <marker date="1507032898547" expanded="false" signature="77:94" ph="..." />
-                <marker date="1507032898547" expanded="true" signature="1907:1912" ph="..." />
-                <marker date="1507032898547" expanded="true" signature="1907:1919" ph="..." />
+                <marker date="1507033282097" expanded="true" signature="2099:2105" ph="..." />
               </folding>
             </state>
           </provider>
@@ -269,25 +269,6 @@
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
               <item name="feedback" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
-              <item name="None" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
@@ -859,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507033176415</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="commit again round 3">
+      <created>1507033254603</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1507033254603</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -874,10 +862,10 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27065217" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27065217" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27065217" sideWeight="0.49573562" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27065217" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
@@ -916,7 +904,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added styling for index page." />
     <MESSAGE value="Add functionality for index page" />
     <MESSAGE value="Filter reviews in home page" />
     <MESSAGE value="Add automatic scroll for customer comments" />
@@ -941,7 +928,8 @@
     <MESSAGE value="commit latest" />
     <MESSAGE value="commit again" />
     <MESSAGE value="commit again round 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit again round 2" />
+    <MESSAGE value="commit again round 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit again round 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1283,12 +1271,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/templates/admin_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        <state relative-caret-position="749">
+          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
           <folding>
-            <marker date="1507032898547" expanded="false" signature="77:94" ph="..." />
-            <marker date="1507032898547" expanded="true" signature="1907:1912" ph="..." />
-            <marker date="1507032898547" expanded="true" signature="1907:1919" ph="..." />
+            <marker date="1507033282097" expanded="true" signature="2099:2105" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1336,8 +1322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+        <state relative-caret-position="1170">
+          <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
