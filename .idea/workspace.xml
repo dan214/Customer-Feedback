@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47d689c9-6c4c-4170-9a0b-79ef6d65e64d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/InterviewTask.iml" afterPath="$PROJECT_DIR$/.idea/InterviewTask.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feedback/migrations/0018_feedback_timestamp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" afterPath="$PROJECT_DIR$/feedback/static/feedback/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/templates/admin_index.html" afterPath="$PROJECT_DIR$/feedback/templates/admin_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback/views.py" afterPath="$PROJECT_DIR$/feedback/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/feedback/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+              <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -69,8 +65,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feedback/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="468">
+              <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -80,8 +76,25 @@
         <entry file="file://$PROJECT_DIR$/feedback/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-              <folding />
+              <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+              <folding>
+                <marker date="1507033109362" expanded="true" signature="1823:4062" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="1904:3233" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="1934:3222" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2201:2271" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2340:3209" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2382:3194" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2418:2488" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2522:2597" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2631:2711" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2745:2828" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="2903:3178" ph="{% if user.is_authenticated ... %}" />
+                <marker date="1507033109362" expanded="true" signature="3259:3301" ph="{% block content ... %}" />
+                <marker date="1507033109362" expanded="true" signature="3303:4054" ph="{% block footer ... %}" />
+                <marker date="1507033109362" expanded="true" signature="3352:3526" ph="..." />
+                <marker date="1507033109362" expanded="true" signature="3382:3485" ph="..." />
+                <marker date="1507033109362" expanded="false" signature="3440:3446" ph="©" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,6 +274,12 @@
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
               <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
               <item name="pic_folder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,6 +294,13 @@
               <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
               <item name="feedback" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Customer-Feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Customer-Feedback" type="b2602c69:ProjectViewProjectNode" />
@@ -819,7 +845,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507033004004</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="commit again">
+      <created>1507033092157</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1507033092157</updated>
+    </task>
+    <task id="LOCAL-00028" summary="commit again round 2">
+      <created>1507033176415</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1507033176415</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -834,13 +874,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27065217" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@InterviewTask" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27065217" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27065217" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="853" y="47" width="202" height="946" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -876,7 +916,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
     <MESSAGE value="Added styling for index page." />
     <MESSAGE value="Add functionality for index page" />
     <MESSAGE value="Filter reviews in home page" />
@@ -900,7 +939,9 @@
     <MESSAGE value="styling for the reviews page" />
     <MESSAGE value="added graph to the admin home page." />
     <MESSAGE value="commit latest" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit latest" />
+    <MESSAGE value="commit again" />
+    <MESSAGE value="commit again round 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit again round 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1255,15 +1296,32 @@
     <entry file="file://$PROJECT_DIR$/feedback/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding />
+          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <marker date="1507033109362" expanded="true" signature="1823:4062" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="1904:3233" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="1934:3222" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2201:2271" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2340:3209" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2382:3194" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2418:2488" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2522:2597" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2631:2711" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2745:2828" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="2903:3178" ph="{% if user.is_authenticated ... %}" />
+            <marker date="1507033109362" expanded="true" signature="3259:3301" ph="{% block content ... %}" />
+            <marker date="1507033109362" expanded="true" signature="3303:4054" ph="{% block footer ... %}" />
+            <marker date="1507033109362" expanded="true" signature="3352:3526" ph="..." />
+            <marker date="1507033109362" expanded="true" signature="3382:3485" ph="..." />
+            <marker date="1507033109362" expanded="false" signature="3440:3446" ph="©" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feedback/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="468">
+          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1279,7 +1337,7 @@
     <entry file="file://$PROJECT_DIR$/feedback/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+          <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
