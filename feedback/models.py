@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
+from _datetime import datetime
 
 
 class Company(models.Model):
@@ -35,6 +36,7 @@ class Feedback(models.Model):
     last_name = models.CharField(max_length=30)
     phone_number = models.IntegerField()
     comment = models.TextField()
+    timestamp = models.DateTimeField(default=datetime.now(), blank=True)
 
     def __str__(self):
         return "%s %s" % (self.first_name, self.last_name)

@@ -12,9 +12,13 @@
 function hideURLbar(){ window.scrollTo(0,1); } </script>
      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
+
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback({{line_chart.as_html}});
     </script>
+    <script src="{% static 'fusioncharts/fusioncharts.js' %}"></script>
+    <script src="{% static 'fusioncharts/themes/fusioncharts.theme.fint.js' %}"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="{% static 'feedback/css/bootstrap.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'feedback/css/font-awesome.css' %}">
