@@ -3,14 +3,14 @@ from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from graphos.sources.simple import SimpleDataSource
-from graphos.renderers.gchart import LineChart
+from graphos.renderers import gchart
 from .forms import CompanyForm,FeedbackForm
 from django.core import serializers
 from graphos.renderers import flot
 import json
 
 
-from .models import Company
+from .models import Company,Feedback
 from django.core.mail import send_mail,EmailMultiAlternatives
 
 
@@ -76,16 +76,19 @@ def index(request):
     elif request.user.is_staff:
 
         company_list = Company.objects.all()
+        reviews = []
+        companies = []
+        for company in company_list:
+            reviews.append(Feedback.objects.filter(company=company).count())
+            companies.append(company.name)
+
         secondary_data = [
-            ['year', 'revenue', 'sales'],
-            [2004, 100, 50000],
-            [2005, 240, 65000],
-            [2006, 300, 55000]
+         companies, reviews
         ]
 
         data_source = SimpleDataSource(secondary_data)
 
-        chart = LineChart(data_source)
+        chart = gchart.BarChart(data_source,options={'title': "Companies versus their Reviews"})
 
 
         employees = User.objects.filter(groups__name='Employees')
