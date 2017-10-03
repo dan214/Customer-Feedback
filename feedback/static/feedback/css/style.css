@@ -437,6 +437,7 @@ footer.py-5.bg-dark {
     bottom: 0;
     left: 0;
     width: 100%;
+	position: fixed;
 }
 .top1 {
 	float: left;
