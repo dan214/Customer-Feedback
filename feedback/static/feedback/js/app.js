@@ -170,6 +170,7 @@ $(document).delegate("#SubmitReviewButtonOnReviewsPage",
         var id = $(this).attr('data-id');
 
         event.preventDefault();
+        showloading((event.target));
 
         $.ajax({
             type: 'POST',
@@ -207,6 +208,27 @@ function start() {
     setTimeout(function () {
         console.log("wait...");
     }, 5000);
+}
+
+function showloading(element) {
+
+    var elementWidth = $(element).width();
+    var elementheight = $(element).height();
+    elementheight = elementheight - 3;
+
+
+
+    var imageText = "<div id=\"loaderImage\"></div>";
+    $(element).removeAttr("id");
+    $(element).css({
+        width: elementWidth,
+        height: elementheight
+
+    });
+
+    $(element).html(imageText);
+    new imageLoader(cImageSrc, 'startAnimation()');
+
 }
 
 function bindCustomerReviewButton() {

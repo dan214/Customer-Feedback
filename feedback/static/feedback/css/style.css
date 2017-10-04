@@ -45,6 +45,13 @@ body a{
 	float: left;
 
 }
+textarea#id_comment {
+    width: 100%;
+}
+input#id_phone_number {
+    width: 64%;
+}
+
 
 .accordion, .accordion * {
     -webkit-box-sizing:border-box;
@@ -57,6 +64,7 @@ body a{
     box-shadow:0px 1px 3px rgba(0,0,0,0.25);
     border-radius:3px;
     background:#f7f7f7;
+	width: 70%;
 }
 
 /*----- Section Titles -----*/
@@ -489,6 +497,10 @@ iframe.cboxIframe {
     width: 100%;
     max-width: 100%;
     margin-bottom: 18px;
+}
+
+.table td {
+    text-align: left;
 }
 
 .widget-body {
