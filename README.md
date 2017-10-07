@@ -2,13 +2,14 @@
 
 This a web-based tool using Django Web Framework for collecting customer feedback.
 
-The project has been deployed to the cloud at PythonAnywhere. 
+The project has been deployed to the cloud and hosted at PythonAnywhere. 
 
 http://customerfeedback.pythonanywhere.com
 
 Credentials for admin
 
 Username: admin
+
 Password: mji4kef2
 
 There are 3 user roles for this app: Admin, Employee, and Customer. Admins manage the
