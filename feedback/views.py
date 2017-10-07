@@ -1,11 +1,11 @@
-from django.shortcuts import render,render_to_response
+from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .forms import CompanyForm,FeedbackForm
 import json
-import calendar
 import datetime
+import graphos
 
 from .fusioncharts import FusionCharts
 from .models import Company,Feedback
