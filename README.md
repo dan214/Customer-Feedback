@@ -5,6 +5,7 @@ This a web-based tool using Django Web Framework for collecting customer feedbac
 The project has been deployed to the cloud at PythonAnywhere. 
 
 http://customerfeedback.pythonanywhere.com
+
 Credentials for admin
 
 Username: admin
@@ -20,7 +21,12 @@ Once a customer adds a review, the employee assigned to that company will receiv
 
 The app also sends out weekly reminder emails to all staff (admin and employees) on activity carried out in the app in the previous week (i.e reviews/companies/employess added,companies reassigned etc)
 
+I've used the django.core.mail module from django
+
 # Graphs
-The app also graphing facilities which provide important statistics and data to admin on the home page.
+
+Using the FusionCharts Django Wrapper, I've been able to embed javascript charts in my django application.
+
+These graphing facilities are used provide important statistics and data (on companies, employees and reviews) to admin on the home page.
 
 
