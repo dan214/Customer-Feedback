@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'feedback',
     'graphos',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [

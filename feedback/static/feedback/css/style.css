@@ -2056,6 +2056,14 @@ span.icon1 {
 span.icon2 {
     top: 360px;
 }
+/*Create form */
+.create-company-form {
+    margin: 20px;
+    width: 60%;
+}
+.create-company-form label {
+    float: left;
+}
 /*--//main--*/
 
 /*--footer--*/
