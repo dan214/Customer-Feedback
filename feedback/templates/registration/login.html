@@ -2,14 +2,10 @@
 
 {%  block content %}
 
-    div class="center-container">
-	<!--header-->
-	<div class="header-w3l">
-		<h1>Login Form</h1>
-	</div>
+    <div class="center-container">
 	<!--//header-->
 	<div class="main-content-agile">
-		<div class="sub-main-w3">
+		<div class="sub-main-w3 border shadow-lg p-3 mb-5 bg-white rounded">
 			<div class="wthree-pro">
                 {% if form.errors %}
                 <p>Your username and password didn't match. Please try again.</p>
@@ -19,28 +15,29 @@
                 <p>Your account doesn't have access to this page. To proceed,
             please login with an account that has access.</p>
             {% else %}
-            <p>Please login to see this page.</p>
+            <h3><span class="label label-default" style="color:#343a40">Welcome</span></h3>
                 {% endif %}
             {% endif %}
-				<h2>Login Quick</h2>
 			</div>
 			<form method="post" action="{% url 'login' %}">
                 {% csrf_token %}
-				<div class="pom-agile">
-					<input placeholder="E-mail" name="username" required id="id_username" class="user" type="text">
+				<div class="form-group row">
+					<label for="id_username" align="left">Email Address</label>
+					<input placeholder="E-mail" name="username" required id="id_username" class="user form-control" type="text">
 					<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div>
-				<div class="pom-agile">
-					<input  placeholder="Password" name="password" class="pass" type="password" required="">
+				<div class="form-group row">
+				    <label for="id_password" align="left">Password</label>
+					<input  placeholder="Password" id="id_password" name="password" class="pass form-control" type="password" required="">
 					<span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
 				</div>
 				<div class="sub-w3l">
-					<h6><a href="{% url 'password_reset' %}">Forgot Password?</a></h6>
-					<div class="right-w3l">
-						<input type="submit" value="login">
-                        <input type="hidden" name="next" value="{{ next }}" />
-					</div>
+					<a class="btn btn-primary forgot-sub" href="{% url 'password_reset' %}">Forgot Password?</a> 
+					<input type="submit" class="btn btn-primary submit-sub" value="login">
+					
 				</div>
+				<input type="hidden" name="next" value="{{ next }}" />
 			</form>
 		</div>
 	</div>
