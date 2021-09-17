@@ -227,7 +227,6 @@ function showloading(element) {
     });
 
     $(element).html(imageText);
-    new imageLoader(cImageSrc, 'startAnimation()');
 
 }
 

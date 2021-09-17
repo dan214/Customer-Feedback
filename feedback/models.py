@@ -9,14 +9,14 @@ class Company(models.Model):
     tag_line = models.TextField()
     description = models.TextField()
     employee = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
-    company_pic = models.ImageField(upload_to='pic_folder/', default='/pic_folder/nologo.jpg')
+    company_pic = models.ImageField(upload_to='./pic_folder/', default='./nologo.jpg')
 
     def __str__(self):
         return self.name
 
     def save(self):
 
-        if not self.id and not self.photo:
+        if not self.id and not self.company_pic:
             return
 
         super(Company, self).save()
